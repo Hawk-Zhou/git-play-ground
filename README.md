@@ -25,3 +25,5 @@ adventure a little bit here
     // this will create an 'anti-commit'
     // that reverts all changes in HEAD
 ```
+
+While adventure on another branch is going on, here's some change in this file on the main.
