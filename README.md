@@ -18,7 +18,9 @@
     git push -f origin main
 ```
 
-## revert
+## Revert
 ```
     git revert HEAD
+    // this will create an 'anti-commit'
+    // that reverts all changes in HEAD
 ```
