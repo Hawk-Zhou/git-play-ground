@@ -1,7 +1,5 @@
 # gitPlayGround
 
-adventure a little bit here
-
 ## Soft reset
 ```
     git reset --soft [hash]
@@ -47,5 +45,3 @@ When teammate san finishes, he/she will just push to main and then
     git checkout main
     git merge <branch-name>
 ```
-
-While adventure on another branch is going on, here's some change in this file on the main.
