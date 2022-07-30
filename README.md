@@ -1,5 +1,40 @@
 # gitPlayGround
 
+## Big Update
+
+After reading a recent post explaining how to use git in a team like a pro on forum of my univ, I followed and tried the teamwork approach and found it very useful.  
+
+A and B get to work on new features. They branch to `feat/A` and `feat/B` respectively. B finished and `git push origin feat/B` and submitted a merge request, which is approved later. A is still working and noticed this. What a needs to do is that:  
+
+```
+// get the latest main
+git checkout main
+git pull origin main
+
+// save work now
+git checkout feat/A
+git add .
+git commit -m "WIP:feat" // WIP means work in progress
+
+// rebase main on feat/A
+git rebase main // this will put main's commits on top of A
+// if there's any conflict, fix each
+git add [conflict file]
+// after every conflict is resolved
+git rebase --continue
+
+// now it's safe to keep working
+
+// after A finished and staged changes
+git commit --amend // this modifies the last commit, the "WIP" one, rewrite a good message
+
+// submit a merge request
+```
+
+After these, A and B will get a perfect graph like this:  
+![image](https://user-images.githubusercontent.com/76863396/181904232-8cbb8540-19cc-47e0-b22e-49cc8eaf509a.png)
+
+
 ## Soft reset
 ```
     git reset --soft [hash]
