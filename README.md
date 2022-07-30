@@ -2,7 +2,7 @@
 
 ## Big Update
 
-After reading a recent post explaining how to use git in a team like a pro on forum of my univ, I followed and tried the teamwork approach and found it very useful.  
+After reading a recent post explaining how to use git in a team like a pro on the forum of my univ, I followed and tried the teamwork approach and found it very useful.  
 
 A and B get to work on new features. They branch to `feat/A` and `feat/B` respectively. B finished and `git push origin feat/B` and submitted a merge request, which is approved later. A is still working and noticed this. What a needs to do is that:  
 
